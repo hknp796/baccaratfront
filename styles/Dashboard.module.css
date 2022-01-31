@@ -1,0 +1,13 @@
+.upload {
+  border-radius: 25px;
+}
+.save {
+  border-radius: 5px;
+}
+.dashboard {
+  background-color: #093184;
+}
+.container {
+    width: 100%;
+    border: none !important;
+  }

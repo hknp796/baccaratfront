@@ -1,0 +1,53 @@
+.card {
+  border: none !important;
+  border-radius: 15px;
+  margin: auto;
+  margin-top: -8rem;
+  background-color: #0b3e98;
+  color: #747684;
+  font-weight: 500;
+}
+
+.header {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 15px;
+  background-color: #0b3e98;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -1rem;
+}
+
+.middlehead {
+  background-color: green;
+  color: white;
+  margin-top: -20px;
+  text-align: center;
+  font-weight: 400;
+  border-radius: 10px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+.middlebody {
+  background-color: #0b2459;
+  height: 100%;
+  margin-top: -1px;
+  border-radius: 15px;
+}
+.middle {
+  position: relative;
+}
+
+.gameloghand{
+    margin-top: 1rem;
+    text-align: center;
+    padding: 4px;
+}
+.gamelogcontainer{
+    padding: 10px;
+    margin-bottom: 1rem;
+}
