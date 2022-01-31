@@ -4,6 +4,7 @@ import { Container, Card, Row, Col, Form, Button } from "react-bootstrap";
 
 import GameLog from "./GameLog";
 import LeftDashboard from "./LeftDashboard";
+import RightDashboard from "./RightDashboard";
 
 
 function Dashboard() {
@@ -79,7 +80,7 @@ function Dashboard() {
             </Card.Body>
           </Col>
           <Row>
-            <LeftDashboard />
+           <RightDashboard />
             
           </Row>
         </Card>
