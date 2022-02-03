@@ -5,9 +5,48 @@
   border-radius: 5px;
 }
 .dashboard {
-  background-color: #093184;
+  background-color: #0b3e98;
 }
-.container {
-    width: 100%;
-    border: none !important;
-  }
+.header{
+  background-color: #083686;
+  color: white;
+}
+.card {
+  width: 1502px;
+  border: none !important;
+  margin-top: 40px;
+  
+}
+.select {
+  margin-top: 4rem;
+  width: 130px;
+  margin-right: -102px;
+  border-radius: 14px;
+  border-style: none;
+}
+.colleft {
+  margin-right: -100px;
+}
+.colright {
+  margin-top: 2rem;
+  position: relative;
+  right: -15rem;
+}
+
+
+.rightbuttonupload {
+  position: relative;
+  right: -6rem;
+  margin-top: 0.4rem;
+  width: 120px;
+  border-radius: 15px;
+  line-height: 18px;
+  font-weight: 500;
+}
+.rightbuttonSave {
+  position: relative;
+  right: -2rem;
+  margin-top: 0.4rem;
+  border-radius: 15px;
+  font-weight: 500;
+}

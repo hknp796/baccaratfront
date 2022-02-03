@@ -5,19 +5,20 @@ import { Container, Card, Row, Col, Form, Button } from "react-bootstrap";
 import GameLog from "./GameLog";
 import LeftDashboard from "./LeftDashboard";
 import RightDashboard from "./RightDashboard";
+import DashboardBottom from "./DashboardBottom";
 
 
 function Dashboard() {
   return (
     <div>
-      <Container className="w-100 mt-5" >
-        <Card className={styles.container}>
-          <Card.Header className="text-center bg-primary w-100 text-white">
-            <Row>
-              <Col>
+      <Container fluid>
+        <Card className={styles.card}>
+          <Card.Header className={styles.header}>
+            <Row className={styles.row}>
+              <Col className={styles.colleft}>
                 <Form.Select
                   aria-label="Default select example"
-                  className="mt-4 w-50"
+                   className={styles.select}
                 >
                   <option>Casino</option>
                   <option value="Stardust">Stardust</option>
@@ -26,10 +27,10 @@ function Dashboard() {
                 </Form.Select>
               </Col>
 
-              <Col>
+              <Col className={styles.colleft}>
                 <Form.Select
                   aria-label="Default select example"
-                  className="mt-4 w-50"
+                  className={styles.select}
                 >
                   <option>Casino</option>
                   <option value="Stardust">Stardust</option>
@@ -40,7 +41,7 @@ function Dashboard() {
               <Col>
                 <Form.Select
                   aria-label="Default select example"
-                  className="mt-4 w-50"
+                  className={styles.select}
                 >
                   <option>Casino</option>
                   <option value="Stardust">Stardust</option>
@@ -48,42 +49,49 @@ function Dashboard() {
                   <option value="Bitstars">Bitstars</option>
                 </Form.Select>
               </Col>
-              <Col className="mt-4">
+            
+
+              <Col className={styles.colright}>
                 <h4>GAME INPUTS</h4>
               </Col>
-              <Col>
+              <Col className={styles.rightbuttonupload}>
                 <Button
                   variant="success"
                   type="submit"
-                  size="sm"
-                  className={styles.upload}
-                  className="mt-4  mb-4"
-                >
+                  
+                  className={styles.rightbuttonupload}
+            
+                  >
                   Game Image Upload
                 </Button>
               </Col>
-              <Col>
+              <Col className={styles.rightbuttonSave}>
                 <Button
                   variant="success"
                   type="submit"
-                  className="mt-4  mb-4"
-                  size="sm"
-                >
+                  className={styles.rightbuttonSave}
+                
+                  >
                   Save Game
                 </Button>
               </Col>
+                
             </Row>
           </Card.Header>
           <Col>
             <Card.Body className={styles.middle}>
-              {/* <GameLog /> */}
+               <GameLog /> 
             </Card.Body>
           </Col>
           <Row>
            <RightDashboard />
+           <LeftDashboard />
             
           </Row>
         </Card>
+        
+         <DashboardBottom />
+        
       </Container>
     </div>
   );

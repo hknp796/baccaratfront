@@ -1,17 +1,209 @@
-.rightcontainer {
-display: flex;
-  margin-left: auto;
+.buttons {
+  display: flex;
   border-radius: 50%;
-  margin-right: 30%;
-  
+  border-style: none;
+  height: 53px;
+  width: 52px;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
 }
-.rightside{
-    width: 30%;
-    display: flex;
-    margin-left: auto;
-    margin-right: 150px;
+.container {
+  margin-top: -355px;
+  width: 32%;
+
+  margin-left: auto;
+  margin-right: 130px;
 }
-.row{
-    margin-bottom: 10px;
-    padding: 10px;
+.row {
+  margin-bottom: 30px;
+  margin-top: 20px;
+
+  height: 40px;
+}
+.buttonCol {
+  padding-right: 0;
+  padding-left: 0;
+  padding: 1px;
+  margin-right: -1px;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 4px;
+  grid-row-gap: 2px;
+}
+.parent > div {
+  border: 1px rgb(218, 211, 211) solid;
+  background-color: white;
+  border-radius: 5px;
+  width: 63px;
+  height: 26px;
+  display: flex;
+
+  justify-content: center;
+}
+.parent > div:nth-child(7) {
+  width: 147px;
+  height: 26px;
+  background-color: #093184;
+  color: white;
+  font-size: 14px;
+}
+.parent > div:nth-child(14) {
+  width: 180px;
+  height: 26px;
+  background-color: #093184;
+}
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.div2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.div3 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.div4 {
+  grid-area: 1 / 4 / 2 / 5;
+}
+.div5 {
+  grid-area: 1 / 5 / 2 / 6;
+}
+.div6 {
+  grid-area: 1 / 6 / 2 / 7;
+}
+.div7 {
+  grid-area: 1 / 7 / 2 / 8;
+}
+.div8 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.div9 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.div10 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+.div11 {
+  grid-area: 2 / 4 / 3 / 5;
+}
+.div12 {
+  grid-area: 2 / 5 / 3 / 6;
+}
+.div13 {
+  grid-area: 2 / 6 / 3 / 7;
+}
+.div14 {
+  grid-area: 2 / 7 / 3 / 8;
+  width: 147px;
+  height: 26px;
+  font-size: 14px;
+}
+.grid {
+  display: flex;
+
+  margin-top: -10px;
+  width: 586px;
+  display: flex;
+  height: 70px;
+  margin-right: 1px;
+  border: 1px solid rgb(226, 218, 218);
+  padding: 8px;
+  background-color: rgb(238, 238, 238);
+}
+.blackButton {
+  position: absolute;
+  right: 5rem;
+  top: 8rem;
+  border-radius: 50%;
+  border-style: none;
+  height: 53px;
+  width: 52px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  background-color: black;
+  color: white;
+}
+.buttonNatural {
+  position: absolute;
+  right: 4.4rem;
+  top: 12rem;
+  border-style: none;
+  width: 78px;
+  height: 24px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 300;
+  background-color: white;
+  color: rgb(10, 10, 10);
+}
+.buttonChance {
+  position: absolute;
+  right: 4.4rem;
+  top: 14rem;
+  border-style: none;
+  width: 78px;
+  height: 24px;
+  border: 1px solid rgb(202, 154, 23);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 300;
+  background-color: white;
+
+  color: #e0c00e;
+}
+.undo {
+  position: absolute;
+  right: 1rem;
+  top: 8rem;
+  border-style: none;
+}
+.delete {
+  position: absolute;
+  right: 1rem;
+  top: 11rem;
+  border-style: none;
+}
+.redo {
+  position: absolute;
+  right: 1rem;
+  top: 13.5rem;
+  border-style: none;
+}
+
+table.customTable {
+  width: 592px;
+  height: 109px;
+  margin-left: auto;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  border-width: 1px;
+  border-color: #e4e9f0;
+  border-style: solid;
+  color: #6b6f8b;
+}
+
+table.customTable td,
+table.customTable th {
+  border-width: 1px;
+  border-color: #e4e9f0;
+  border-style: solid;
+  padding: 5px;
+  text-align: center;
+}
+.inputs {
+  width: 213px;
+  height: 29px;
+  background-color: #edf0f7;
+  border: 1px solid #edf0f7;
+  border-radius: 5px;
 }

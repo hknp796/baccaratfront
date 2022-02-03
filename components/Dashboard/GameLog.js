@@ -3,15 +3,15 @@ import { Card, Col, Container, Row } from "react-bootstrap";
 import styles from "../../styles/DashboardGameLog.module.css";
 function GameLog() {
   return (
-    <Card className={styles.card} style={{ width: "13.4rem"}}>
+    <Card className={styles.card}>
       <div className={styles.header}>
         <h4>GAME LOG</h4>
       </div>
-      <Card className={styles.middlehead}>Results</Card>
+      <div className={styles.middlehead}>Results</div>
       <Card className={styles.middlebody}>
         <Container className={styles.gamelogcontainer}>
           <Card className={styles.gameloghand}>Hand #69</Card>
-          <Card className={styles.gameloghand}><span> #69</span><span> #69</span><span> #69</span></Card>
+          <Card className={styles.gameloghand}></Card>
           <Card className={styles.gameloghand}>Hand #69</Card>
           <Row>
             <Col>
