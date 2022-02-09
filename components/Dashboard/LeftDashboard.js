@@ -1,123 +1,102 @@
-import styles from '../../styles/LeftDashboard.module.css'
+import styles from "../../styles/LeftDashboard.module.css";
 import { Container, Card, Row, Col } from "react-bootstrap";
 function LeftDashboard() {
   return (
-    <Container >
-  
-<table className={styles.customTable}>
-  <thead>
-    <tr>
-      <th>1</th>
-      <th>2</th>
-      <th>3</th>
-      <th>4</th>
-      <th>5</th>
-      <th>6</th>
-      <th>7</th>
-      <th>8</th>
-      <th>9</th>
-      <th>10</th>
-      <th>11</th>
-      <th>12</th>
-      <th>13</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>7</td>
-      <td>13</td>
-      <td>19</td>
-      <td>25</td>
-      <td>31</td>
-      <td>37</td>
-      <td>43</td>
-      <td>49</td>
-      <td>55</td>
-      <td>61</td>
-      <td>67</td>
-      <td>73</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>8</td>
-      <td>14</td>
-      <td>20</td>
-      <td>26</td>
-      <td>32</td>
-      <td>38</td>
-      <td>44</td>
-      <td>50</td>
-      <td>56</td>
-      <td>62</td>
-      <td>68</td>
-      <td>74</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>9</td>
-      <td>15</td>
-      <td>21</td>
-      <td>27</td>
-      <td>33</td>
-      <td>39</td>
-      <td>45</td>
-      <td>51</td>
-      <td>57</td>
-      <td>63</td>
-      <td>69</td>
-      <td>75</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>10</td>
-      <td>16</td>
-      <td>22</td>
-      <td>28</td>
-      <td>34</td>
-      <td>40</td>
-      <td>46</td>
-      <td>52</td>
-      <td>58</td>
-      <td>64</td>
-      <td>70</td>
-      <td>76</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>11</td>
-      <td>17</td>
-      <td>23</td>
-      <td>29</td>
-      <td>35</td>
-      <td>41</td>
-      <td>47</td>
-      <td>53</td>
-      <td>59</td>
-      <td>65</td>
-      <td>71</td>
-      <td>77</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>12</td>
-      <td>18</td>
-      <td>24</td>
-      <td>30</td>
-      <td>36</td>
-      <td>42</td>
-      <td>48</td>
-      <td>54</td>
-      <td>60</td>
-      <td>66</td>
-      <td>72</td>
-      <td>78</td>
-    </tr>
-  </tbody>
-</table>
-
+    <Container>
+      <div className={styles.parent}>
+        <div className={styles.div1}>1 </div>
+        <div className={styles.div2}> 2</div>
+        <div className={styles.div3}> 3</div>
+        <div className={styles.div4}> 4</div>
+        <div className={styles.div5}> 5</div>
+        <div className={styles.div6}> 6</div>
+        <div className={styles.div7}> 7</div>
+        <div className={styles.div8}> 8</div>
+        <div className={styles.div9}> 9</div>
+        <div className={styles.div10}>10 </div>
+        <div className={styles.div11}> 11</div>
+        <div className={styles.div12}> 12</div>
+        <div className={styles.div13}>13 </div>
+        <div className={styles.div14}> 1</div>
+        <div className={styles.div15}> 2</div>
+        <div className={styles.div16}> 3</div>
+        <div className={styles.div17}> 4</div>
+        <div className={styles.div18}> 5</div>
+        <div className={styles.div19}> 6</div>
+        <div className={styles.div20}> 7</div>
+        <div className={styles.div21}> 8</div>
+        <div className={styles.div22}> 9</div>
+        <div className={styles.div23}> 10</div>
+        <div className={styles.div24}>11 </div>
+        <div className={styles.div25}> 12</div>
+        <div className={styles.div26}>13 </div>
+        <div className={styles.div27}> 14</div>
+        <div className={styles.div28}> 15</div>
+        <div className={styles.div29}>16 </div>
+        <div className={styles.div30}>17 </div>
+        <div className={styles.div31}>18 </div>
+        <div className={styles.div32}>19 </div>
+        <div className={styles.div33}> 20</div>
+        <div className={styles.div34}> 21</div>
+        <div className={styles.div35}> 22</div>
+        <div className={styles.div36}> 23</div>
+        <div className={styles.div37}>24 </div>
+        <div className={styles.div38}>25 </div>
+        <div className={styles.div39}> 26</div>
+        <div className={styles.div40}> 27</div>
+        <div className={styles.div41}> 28</div>
+        <div className={styles.div42}>29 </div>
+        <div className={styles.div43}> 30</div>
+        <div className={styles.div44}> 31</div>
+        <div className={styles.div45}> 32</div>
+        <div className={styles.div46}> 33</div>
+        <div className={styles.div47}>34 </div>
+        <div className={styles.div48}>35 </div>
+        <div className={styles.div49}>36 </div>
+        <div className={styles.div50}> 37</div>
+        <div className={styles.div51}> 38</div>
+        <div className={styles.div52}> 39</div>
+        <div className={styles.div53}> 40</div>
+        <div className={styles.div54}>41 </div>
+        <div className={styles.div55}> 42</div>
+        <div className={styles.div56}> 43</div>
+        <div className={styles.div57}> 44</div>
+        <div className={styles.div58}> 45</div>
+        <div className={styles.div59}> 46</div>
+        <div className={styles.div60}> 47</div>
+        <div className={styles.div61}> 48</div>
+        <div className={styles.div62}> 49</div>
+        <div className={styles.div63}>50 </div>
+        <div className={styles.div64}> 51</div>
+        <div className={styles.div65}> 52</div>
+        <div className={styles.div66}>53 </div>
+        <div className={styles.div67}>54 </div>
+        <div className={styles.div68}> 55</div>
+        <div className={styles.div69}>56 </div>
+        <div className={styles.div70}>57 </div>
+        <div className={styles.div71}>58 </div>
+        <div className={styles.div72}> 59</div>
+        <div className={styles.div73}> 60</div>
+        <div className={styles.div74}> 61</div>
+        <div className={styles.div75}> 62</div>
+        <div className={styles.div76}> 63</div>
+        <div className={styles.div77}> 64</div>
+        <div className={styles.div78}> 65</div>
+        <div className={styles.div79}>66 </div>
+        <div className={styles.div80}> 67</div>
+        <div className={styles.div81}> 68</div>
+        <div className={styles.div82}> 69</div>
+        <div className={styles.div83}> 70</div>
+        <div className={styles.div84}> 71</div>
+        <div className={styles.div85}> 72</div>
+        <div className={styles.div86}> 73</div>
+        <div className={styles.div87}> 74</div>
+        <div className={styles.div88}>75 </div>
+        <div className={styles.div89}>76 </div>
+        <div className={styles.div90}> 77</div>
+        <div className={styles.div91}> 78</div>
+        </div>
     </Container>
   )
 }
-
-export default LeftDashboard;
+export default LeftDashboard

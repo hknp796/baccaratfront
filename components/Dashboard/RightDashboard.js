@@ -1,111 +1,61 @@
-import { Button, Col, Container, Row, Card } from "react-bootstrap";
+import { Button, Col, Container, Row,Badge } from "react-bootstrap";
 import styles from "../../styles/RightDashboard.module.css";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUndo,faRedo ,faTrashAlt } from '@fortawesome/free-solid-svg-icons'
 function RightDashboard() {
   return (
-    <Container >
-      <Container className={styles.container}>
-        <Row className={styles.row}>
-          <Col className={styles.buttonCol}>
-            <Button
-              className={styles.buttons}
-              style={{ backgroundColor: "#277ECA" }}
-            >
-              P
-            </Button>
-          </Col>
-          <Col className={styles.buttonCol}>
-            <Button
-              className={styles.buttons}
-              style={{ backgroundColor: "#ED4967" }}
-            >
-              B
-            </Button>
-          </Col>
-          <Col className={styles.buttonCol}>
-            <Button
-              className={styles.buttons}
-              style={{ backgroundColor: "#19A05C" }}
-            >
-              T
-            </Button>
-          </Col>
-          <Col className={styles.buttonCol}>
-            <Button
-              className={styles.buttons}
-              style={{ backgroundColor: "#277ECA" }}
-            >
-              I
-            </Button>
-          </Col>
-          <Col className={styles.buttonCol}>
-            <Button
-              className={styles.buttons}
-              style={{ backgroundColor: "#ED4967" }}
-            >
-              M
-            </Button>
-          </Col>
-          <Col className={styles.buttonCol}>
-            <Button
-              className={styles.buttons}
-              style={{ backgroundColor: "#19A05C" }}
-            >
-              E
-            </Button>
-          </Col>
-        </Row>
-
-        <Row className={styles.row}>
-          <Col className={styles.buttonCol}>
-            <Button
-              className={styles.buttons}
-              style={{ backgroundColor: "#277ECA" }}
-            >
-              O
-            </Button>
-          </Col>
-          <Col className={styles.buttonCol}>
-            <Button
-              className={styles.buttons}
-              style={{ backgroundColor: "#ED4967" }}
-            >
-              N
-            </Button>
-          </Col>
-          <Col className={styles.buttonCol}>
-            <Button
-              className={styles.buttons}
-              style={{ backgroundColor: "#19A05C" }}
-            >
-              R
-            </Button>
-          </Col>
-          <Col className={styles.buttonCol}>
-            <Button
-              className={styles.buttons}
-              style={{ backgroundColor: "#277ECA" }}
-            >
-              U
-            </Button>
-          </Col>
-          <Col className={styles.buttonCol}>
-            <Button
-              className={styles.buttons}
-              style={{ backgroundColor: "#ED4967" }}
-            >
-              V
-            </Button>
-          </Col>
-          <Col className={styles.buttonCol}>
-            <Button
-              className={styles.buttons}
-              style={{ backgroundColor: "#19A05C" }}
-            >
-              W
-            </Button>
-          </Col>
-        </Row>
+    <Container>
+      <Container className={styles.buttonsContainer}>
+        <div className={styles.rightButton}>
+          <div >
+       
+            <button  style={{ backgroundColor: "#277ECA" }}>P
+         </button>
+            
+          </div>
+          <div>
+            <button style={{ backgroundColor: "#ED4967" }}>B</button>{" "}
+          </div>
+          <div>
+            <button style={{ backgroundColor: "#19A05C" }}>T</button>
+          </div>
+          <div>
+            <button style={{ backgroundColor: "#277ECA" }}>I</button>
+          </div>
+          <div>
+            <button style={{ backgroundColor: "#ED4967" }}>M</button>
+          </div>
+          <div>
+            <button style={{ backgroundColor: "#19A05C" }}>E</button>
+          </div>
+          <div>
+            <button style={{ backgroundColor: "#277ECA" }}>O</button>
+          </div>
+          <div>
+            <button style={{ backgroundColor: "#ED4967" }}>N</button>
+          </div>
+          <div>
+            <button style={{ backgroundColor: "#19A05C" }}>R</button>
+          </div>
+          <div>
+          <Badge pill className={styles.badgeU}>
+    $
+  </Badge>
+            <button style={{ backgroundColor: "#277ECA" }}> U</button>
+          </div>
+          <div>
+          <Badge pill className={styles.badgeV}>
+    $
+  </Badge>
+            <button style={{ backgroundColor: "#ED4967" }}>V</button>
+          </div>
+          <div>
+          <Badge pill className={styles.badgeW}>
+    $
+  </Badge>
+            <button style={{ backgroundColor: "#19A05C" }}>W</button>
+          </div>
+        </div>
       </Container>
       <Container>
         <Row>
@@ -117,8 +67,12 @@ function RightDashboard() {
               +F
             </Button>
             <img src="/undo.png" alt="" className={styles.undo} />
-            <img src="/delete.png" alt="" className={styles.delete} />
+            <Container className={styles.deletecontainer}>
+
+            <FontAwesomeIcon icon={faTrashAlt} />
+            </Container>
             <img src="/redo.png" alt="" className={styles.redo} />
+ 
           </Col>
         </Row>
         <Row>
@@ -132,21 +86,22 @@ function RightDashboard() {
           </Col>
         </Row>
       </Container>
+      
       <Container className={styles.grid}>
         <div className={styles.parent}>
-          <div className={styles.div1}> dd</div>
-          <div className={styles.div2}> dd</div>
-          <div className={styles.div3}> ss</div>
-          <div className={styles.div4}> s</div>
-          <div className={styles.div5}>d </div>
-          <div className={styles.div6}> sda</div>
+          <div className={styles.div1}>10</div>
+          <div className={styles.div2}> 20</div>
+          <div className={styles.div3}> 40</div>
+          <div className={styles.div4}> 50-5</div>
+          <div className={styles.div5}>150-30</div>
+          <div className={styles.div6}> 350-40</div>
           <div className={styles.div7}> Bankroll $5000</div>
-          <div className={styles.div8}> sda</div>
-          <div className={styles.div9}> ee</div>
-          <div className={styles.div10}> ea</div>
-          <div className={styles.div11}>qq </div>
-          <div className={styles.div12}> e3</div>
-          <div className={styles.div13}> qw</div>
+          <div className={styles.div8}> 500-50</div>
+          <div className={styles.div9}> 1000-100</div>
+          <div className={styles.div10}> 2500-300</div>
+          <div className={styles.div11}>3500-600</div>
+          <div className={styles.div12}> 5000-900</div>
+          <div className={styles.div13}> 6500-1200</div>
 
           <select className={styles.div14}>
             <option>Select Betting option</option>
@@ -154,7 +109,7 @@ function RightDashboard() {
         </div>
       </Container>
 
-      <table className={styles.customTable }>
+      <table className={styles.customTable}>
         <tbody>
           <tr>
             <td>Stop Lost: $1000 20%</td>
@@ -165,8 +120,12 @@ function RightDashboard() {
             <td>Win Total: 33%</td>
           </tr>
           <tr>
-            <td><input type="text" className={styles.inputs}/></td>
-            <td><input type="text" className={styles.inputs}/></td>
+            <td>
+              <input type="text" className={styles.inputs} />
+            </td>
+            <td>
+              <input type="text" className={styles.inputs} />
+            </td>
           </tr>
         </tbody>
       </table>

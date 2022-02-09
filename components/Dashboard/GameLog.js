@@ -3,35 +3,41 @@ import { Card, Col, Container, Row } from "react-bootstrap";
 import styles from "../../styles/DashboardGameLog.module.css";
 function GameLog() {
   return (
-    <Card className={styles.card}>
-      <div className={styles.header}>
-        <h4>GAME LOG</h4>
+    <div>
+      <Container className={styles.outerContainer}>
+        <div className={styles.header}>
+          <h4>GAME LOG</h4>
+        </div>
+      </Container>
+
+      <div className={styles.resultContainer}>
+        <h5 className={styles.result}>Results</h5>
       </div>
-      <div className={styles.middlehead}>Results</div>
-      <Card className={styles.middlebody}>
-        <Container className={styles.gamelogcontainer}>
-          <Card className={styles.gameloghand}>Hand #69</Card>
-          <Card className={styles.gameloghand}></Card>
-          <Card className={styles.gameloghand}>Hand #69</Card>
-          <Row>
-            <Col>
-              <Card className={styles.gameloghand}>Streakes 9</Card>
-            </Col>
-            <Col>
-              <Card className={styles.gameloghand}>Chops 12</Card>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <Card className={styles.gameloghand}>Hand #69</Card>
-            </Col>
-            <Col>
-              <Card className={styles.gameloghand}>Hand #69</Card>
-            </Col>
-          </Row>
-        </Container>
-      </Card>
-    </Card>
+
+      <div className={styles.mainContainer}>
+        <div className={styles.gameloghand}>Hand #69</div>
+        <div className={styles.parentCount}>
+          <div className={styles.count1}>dd</div>
+          <div className={styles.count2}>
+            dd
+          </div>
+          <div className={styles.count3}>dd</div>
+        </div>
+        <div className={styles.pointParent}>
+        <div className={styles.point1}>P.P 25</div>
+          <div className={styles.point2}>
+            B.P 1
+          </div>
+          <div className={styles.point3}>T 2</div>
+        </div>
+        <div className={styles.parentGrid}>
+          <div className="div1"> Streaks 9</div>
+          <div className="div2">Chops 12 </div>
+          <div className="div3"> SES 15-15</div>
+          <div className="div4">Chance 1-5</div>
+        </div>
+      </div>
+    </div>
   );
 }
 
