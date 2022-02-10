@@ -9,7 +9,6 @@
   height: 113px;
   width: 319px;
   position: relative;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -189,4 +188,22 @@
 }
 .div4 {
   grid-area: 2 / 2 / 3 / 3;
+}
+.bluecircle{
+  width: 21px;
+  height: 21px;
+  background-color: #277eca;
+  border-radius: 50%;
+}
+.redcircle{
+  width: 21px;
+  height: 21px;
+  background-color: #ed4967;
+  border-radius: 50%;
+}
+.greencircle{
+  width:21px;
+  height: 21px;
+  background-color: #19a05c;
+  border-radius: 50%;
 }

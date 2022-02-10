@@ -17,11 +17,11 @@ function GameLog() {
       <div className={styles.mainContainer}>
         <div className={styles.gameloghand}>Hand #69</div>
         <div className={styles.parentCount}>
-          <div className={styles.count1}>dd</div>
+          <div className={styles.count1}>ss&nbsp;<div className={styles.bluecircle}></div> &nbsp;ss</div>
           <div className={styles.count2}>
-            dd
+          <div className={styles.redcircle}></div>
           </div>
-          <div className={styles.count3}>dd</div>
+          <div className={styles.count3}><div className={styles.greencircle}></div></div>
         </div>
         <div className={styles.pointParent}>
         <div className={styles.point1}>P.P 25</div>

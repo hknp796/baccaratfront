@@ -1,17 +1,14 @@
-import { Button, Col, Container, Row,Badge } from "react-bootstrap";
+import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Badge, Button, Col, Container, Row } from "react-bootstrap";
 import styles from "../../styles/RightDashboard.module.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUndo,faRedo ,faTrashAlt } from '@fortawesome/free-solid-svg-icons'
 function RightDashboard() {
   return (
     <Container>
       <Container className={styles.buttonsContainer}>
         <div className={styles.rightButton}>
-          <div >
-       
-            <button  style={{ backgroundColor: "#277ECA" }}>P
-         </button>
-            
+          <div>
+            <button style={{ backgroundColor: "#277ECA" }}>P</button>
           </div>
           <div>
             <button style={{ backgroundColor: "#ED4967" }}>B</button>{" "}
@@ -20,39 +17,57 @@ function RightDashboard() {
             <button style={{ backgroundColor: "#19A05C" }}>T</button>
           </div>
           <div>
+          <Badge pill className={styles.badgeI}>
+              O
+            </Badge>
             <button style={{ backgroundColor: "#277ECA" }}>I</button>
           </div>
           <div>
+          <Badge pill className={styles.badgeM}>
+              O
+            </Badge>
             <button style={{ backgroundColor: "#ED4967" }}>M</button>
           </div>
           <div>
+          <Badge pill className={styles.badgeE}>
+              O
+            </Badge>
             <button style={{ backgroundColor: "#19A05C" }}>E</button>
           </div>
           <div>
+            <Badge pill className={styles.badgeO}>
+              Ø
+            </Badge>
             <button style={{ backgroundColor: "#277ECA" }}>O</button>
           </div>
           <div>
+            <Badge pill className={styles.badgeN}>
+              Ø
+            </Badge>
             <button style={{ backgroundColor: "#ED4967" }}>N</button>
           </div>
           <div>
+            <Badge pill className={styles.badgeR}>
+              Ø
+            </Badge>
             <button style={{ backgroundColor: "#19A05C" }}>R</button>
           </div>
           <div>
-          <Badge pill className={styles.badgeU}>
-    $
-  </Badge>
+            <Badge pill className={styles.badgeU}>
+              $
+            </Badge>
             <button style={{ backgroundColor: "#277ECA" }}> U</button>
           </div>
           <div>
-          <Badge pill className={styles.badgeV}>
-    $
-  </Badge>
+            <Badge pill className={styles.badgeV}>
+              $
+            </Badge>
             <button style={{ backgroundColor: "#ED4967" }}>V</button>
           </div>
           <div>
-          <Badge pill className={styles.badgeW}>
-    $
-  </Badge>
+            <Badge pill className={styles.badgeW}>
+              $
+            </Badge>
             <button style={{ backgroundColor: "#19A05C" }}>W</button>
           </div>
         </div>
@@ -68,11 +83,9 @@ function RightDashboard() {
             </Button>
             <img src="/undo.png" alt="" className={styles.undo} />
             <Container className={styles.deletecontainer}>
-
-            <FontAwesomeIcon icon={faTrashAlt} />
+              <FontAwesomeIcon icon={faTrashAlt} />
             </Container>
             <img src="/redo.png" alt="" className={styles.redo} />
- 
           </Col>
         </Row>
         <Row>
@@ -86,7 +99,7 @@ function RightDashboard() {
           </Col>
         </Row>
       </Container>
-      
+
       <Container className={styles.grid}>
         <div className={styles.parent}>
           <div className={styles.div1}>10</div>

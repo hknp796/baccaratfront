@@ -276,3 +276,93 @@ table.customTable th {
   top: 4.1rem;
   border: 1px solid white;
 }
+.badgeO {
+  position: absolute;
+  z-index: 1;
+  height: 17px;
+  width: 17px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #19a05c !important;
+  right: 16.2rem;
+  top: 4.1rem;
+  border: 1px solid white;
+  font-weight: 300;
+}
+.badgeN {
+  position: absolute;
+  z-index: 1;
+  height: 17px;
+  width: 17px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ed4967 !important;
+  right: 20.6rem;
+  top: 4.1rem;
+  border: 1px solid white;
+  font-weight: 300;
+}
+.badgeR {
+  position: absolute;
+  z-index: 1;
+  height: 17px;
+  width: 17px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #277eca !important;
+  right: 25.2rem;
+  top: 4.1rem;
+  border: 1px solid white;
+  font-weight: 300;
+}
+.badgeI {
+  position: absolute;
+  z-index: 1;
+  height: 17px;
+  width: 17px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #19a05c !important;
+  right: 2.8rem;
+  top: -.2rem;
+  border: 1px solid white;
+  font-weight: 300;
+}
+.badgeM {
+  position: absolute;
+  z-index: 1;
+  height: 17px;
+  width: 17px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ed4967 !important;
+  right: 7.2rem;
+  top: -.2rem;
+  border: 1px solid white;
+  font-weight: 300;
+}
+.badgeE {
+  position: absolute;
+  z-index: 1;
+  height: 17px;
+  width: 17px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #277eca !important;
+  right: 11.7rem;
+  top: -.2rem;
+  border: 1px solid white;
+  font-weight: 300;
+}

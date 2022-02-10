@@ -9,16 +9,23 @@ import DashboardBottom from "./DashboardBottom";
 import TriggersAndTheories from "../TriggersAndTheories/TriggersAndTheories";
 
 function Dashboard() {
+  const time = new Date().toLocaleTimeString()
+  const date =     new Date().toLocaleDateString();
   return (
     <div>
-      <Container fluid>
+      <Container fluid style={{padding:"53px"}}>
         <Card className={styles.card}>
           <Card.Header className={styles.header}>
             <Row className={styles.row}>
-              <div className={styles.avatar}>
-                <img className={styles.avatarImage} src="/avatar.png" />
+              <div className={styles.profile}>
+                <div className={styles.avatar}>
+                  <img className={styles.avatarImage} src="/avatar.png" />
+                </div>
+                <div > Nevlon Duguid</div>
+                <div className="div3">{time}  </div>
+                <div className="div4"> {date}  </div>
+                <div className="div4"> #:2121 </div>
               </div>
-              <div className={styles.profile}> Nevlon Duguid</div>
               <Col className={styles.colleft}>
                 <Form.Select
                   aria-label="Default select example"
