@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import styles from "../../styles/Dashboard.module.css";
 import { Container, Card, Row, Col, Form, Button } from "react-bootstrap";
 
@@ -9,11 +9,29 @@ import DashboardBottom from "./DashboardBottom";
 import TriggersAndTheories from "../TriggersAndTheories/TriggersAndTheories";
 
 function Dashboard() {
+  let count = {
+
+    1: 0,
+    2: 0,
+    3: 0
+  }
+  const [style, setStyle] = useState([]);
+  const [letter, setLetter] = useState([]);
+  const[counter,setCounter] = useState(count)
+
+  const buttonClick = (id) => {
+    setCounter({ ...counter, [id]: counter[id] + 1 })
+  };
+  
+  console.log("counter",counter);
+  
+  const options = ["Stardust", "Draftking", "Bitstar"];
+
   const time = new Date().toLocaleTimeString()
   const date =     new Date().toLocaleDateString();
   return (
     <div>
-      <Container fluid style={{padding:"53px"}}>
+      <Container fluid className={styles.dashConatiner}>
         <Card className={styles.card}>
           <Card.Header className={styles.header}>
             <Row className={styles.row}>
@@ -22,25 +40,32 @@ function Dashboard() {
                   <img className={styles.avatarImage} src="/avatar.png" />
                 </div>
                 <div > Nevlon Duguid</div>
-                <div className="div3">{time}  </div>
-                <div className="div4"> {date}  </div>
+               
+                <div className="div3" >{time}  </div>
+                <div>
+
+                <input type="date" className="div4"/>
+                </div>
                 <div className="div4"> #:2121 </div>
               </div>
               <Col className={styles.colleft}>
-                <Form.Select
-                  aria-label="Default select example"
+             
+           
+              <Form.Select
+                
                   className={styles.select}
                 >
-                  <option>Select Casino</option>
+                  <option>Select Platform</option>
                   <option value="Stardust">Stardust</option>
                   <option value="Draftking">Draftking</option>
                   <option value="Bitstars">Bitstars</option>
                 </Form.Select>
+             
               </Col>
 
               <Col className={styles.colleft}>
                 <Form.Select
-                  aria-label="Default select example"
+                 
                   className={styles.select}
                 >
                   <option>Select Platform</option>
@@ -54,10 +79,13 @@ function Dashboard() {
                   aria-label="Default select example"
                   className={styles.select}
                 >
+                  {/* iterative rendering here  */}
                   <option>Select Game</option>
                   <option value="Stardust">Stardust</option>
                   <option value="Draftking">Draftking</option>
                   <option value="Bitstars">Bitstars</option>
+                  {/*  */}
+
                 </Form.Select>
               </Col>
 
@@ -69,6 +97,7 @@ function Dashboard() {
                   variant="success"
                   type="button"
                   className={styles.rightbuttonupload}
+                 
                 >
                   Game Image Upload
                 </Button>
@@ -86,18 +115,27 @@ function Dashboard() {
           </Card.Header>
           <Col>
             <Card.Body className={styles.middle}>
-              <GameLog />
+              {/* center box */}
+              <GameLog counter={counter}  />
+              {/*  */}
             </Card.Body>
           </Col>
           <Row>
-            <RightDashboard />
-            <LeftDashboard />
+            {/* Right dashboard component */}
+          <RightDashboard buttonClick={buttonClick}/>
+            {/*  */}
+            {/* Left dashboard component */}
+            <LeftDashboard style={style} />
+            {/*  */}
           </Row>
         </Card>
-
+        {/* dashboard component  */}
         <DashboardBottom />
+        {/*  */}
       </Container>
+      {/* triggers and theories component */}
       <TriggersAndTheories />
+      {/*  */}
     </div>
   );
 }

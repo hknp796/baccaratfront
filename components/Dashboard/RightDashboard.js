@@ -2,19 +2,20 @@ import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Badge, Button, Col, Container, Row } from "react-bootstrap";
 import styles from "../../styles/RightDashboard.module.css";
-function RightDashboard() {
+function RightDashboard(props) {
+let P,B
   return (
     <Container>
       <Container className={styles.buttonsContainer}>
         <div className={styles.rightButton}>
           <div>
-            <button style={{ backgroundColor: "#277ECA" }}>P</button>
+            <button style={{ backgroundColor: "#277ECA" }} onClick={()=>props.buttonClick(1)}>P</button>
           </div>
           <div>
-            <button style={{ backgroundColor: "#ED4967" }}>B</button>{" "}
+            <button style={{ backgroundColor: "#ED4967" }} onClick={()=>props.buttonClick(2)}>B</button>{" "}
           </div>
           <div>
-            <button style={{ backgroundColor: "#19A05C" }}>T</button>
+            <button style={{ backgroundColor: "#19A05C" }} onClick={()=>props.buttonClick(3)}>T</button>
           </div>
           <div>
           <Badge pill className={styles.badgeI}>
@@ -118,6 +119,7 @@ function RightDashboard() {
 
           <select className={styles.div14}>
             <option>Select Betting option</option>
+            <option value="Stardust">Stardust</option>
           </select>
         </div>
       </Container>

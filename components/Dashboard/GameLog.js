@@ -1,9 +1,10 @@
 import React from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
 import styles from "../../styles/DashboardGameLog.module.css";
-function GameLog() {
+function GameLog(props) {
+  console.log('gamelog',props.counter["1"]);
   return (
-    <div>
+    <>
       <Container className={styles.outerContainer}>
         <div className={styles.header}>
           <h4>GAME LOG</h4>
@@ -17,11 +18,11 @@ function GameLog() {
       <div className={styles.mainContainer}>
         <div className={styles.gameloghand}>Hand #69</div>
         <div className={styles.parentCount}>
-          <div className={styles.count1}>ss&nbsp;<div className={styles.bluecircle}></div> &nbsp;ss</div>
-          <div className={styles.count2}>
+          <div className={styles.count1}>{props.counter["1"]}&nbsp;<div className={styles.bluecircle}></div> &nbsp;ss</div>
+          <div className={styles.count2}>{props.counter["2"]}
           <div className={styles.redcircle}></div>
           </div>
-          <div className={styles.count3}><div className={styles.greencircle}></div></div>
+          <div className={styles.count3}>{props.counter["3"]}<div className={styles.greencircle}></div></div>
         </div>
         <div className={styles.pointParent}>
         <div className={styles.point1}>P.P 25</div>
@@ -37,7 +38,7 @@ function GameLog() {
           <div className="div4">Chance 1-5</div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

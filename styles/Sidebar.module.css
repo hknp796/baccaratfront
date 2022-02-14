@@ -1,44 +1,42 @@
-.navbar{
-    width: 310px;
-    display: flex;
-    flex-direction: column;
-    background-color: #042459;
-    display: flex;
-    align-items: center;
-    
-    
+.navbar {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  background-color: #042459;
+  display: flex;
+  align-items: center;
 }
 
-.sidebar{
-    display: flex;
-    height: 100%;
+.sidebar {
+  display: flex;
+  height: 100%;
 }
 
-.links{
-    width: 273px;
-    height: 46px;
-    text-align: left;
-    font-family: segoe ui;
-    color: #c1c9d3;
-    margin: 8px;
-    font-size: 16px;
-    
+.links {
+  width: 273px;
+  height: 46px;
+  text-align: left;
+  font-family: segoe ui;
+  color: #c1c9d3;
+  margin: 8px;
+  font-size: 16px;
+  margin-left:10px ;
 }
-.links:hover{
-    background-color: aqua;
+.links:active {
+  background-color: aqua;
 }
-.img{
-    height: 20px;
-    width: 20px;
-    margin-right:10px ;
+.img {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
 }
-.logo{
-    width: 214px;
-    height: 69px;
-    margin-bottom: 20px;
+.logo {
+  width: 214px;
+  height: 69px;
+  margin-bottom: 20px;
 }
-.logdash{
-    width: 20px;
-    height: 15px;
-    margin-right:10px ;
+.logdash {
+  width: 20px;
+  height: 15px;
+  margin-right: 10px;
 }

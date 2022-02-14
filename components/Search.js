@@ -53,7 +53,10 @@ const Search = (props) => {
     setFormData([...formData, initialValues]);
   };
   return (
-    <div>
+    <Container fluid className={styles.container}>
+
+    
+    <div >
       <Form onSubmit={handleSubmit}>
         {formData.map((data, index) => {
           return (
@@ -221,6 +224,7 @@ const Search = (props) => {
         </Button>
       </Container>
     </div>
+    </Container>
   );
 };
 

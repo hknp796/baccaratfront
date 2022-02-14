@@ -1,102 +1,43 @@
 import styles from "../../styles/LeftDashboard.module.css";
 import { Container, Card, Row, Col } from "react-bootstrap";
-function LeftDashboard() {
+function LeftDashboard(props) {
+  console.log("left", props.style);
+  console.log("left", props);
+
+  function seeder(n) {
+    let array = [];
+    for (var i = 0; i < n; i++) {
+      array.push(i);
+    }
+    return array;
+  }
+
   return (
     <Container>
       <div className={styles.parent}>
-        <div className={styles.div1}>1 </div>
-        <div className={styles.div2}> 2</div>
-        <div className={styles.div3}> 3</div>
-        <div className={styles.div4}> 4</div>
-        <div className={styles.div5}> 5</div>
-        <div className={styles.div6}> 6</div>
-        <div className={styles.div7}> 7</div>
-        <div className={styles.div8}> 8</div>
-        <div className={styles.div9}> 9</div>
-        <div className={styles.div10}>10 </div>
-        <div className={styles.div11}> 11</div>
-        <div className={styles.div12}> 12</div>
-        <div className={styles.div13}>13 </div>
-        <div className={styles.div14}> 1</div>
-        <div className={styles.div15}> 2</div>
-        <div className={styles.div16}> 3</div>
-        <div className={styles.div17}> 4</div>
-        <div className={styles.div18}> 5</div>
-        <div className={styles.div19}> 6</div>
-        <div className={styles.div20}> 7</div>
-        <div className={styles.div21}> 8</div>
-        <div className={styles.div22}> 9</div>
-        <div className={styles.div23}> 10</div>
-        <div className={styles.div24}>11 </div>
-        <div className={styles.div25}> 12</div>
-        <div className={styles.div26}>13 </div>
-        <div className={styles.div27}> 14</div>
-        <div className={styles.div28}> 15</div>
-        <div className={styles.div29}>16 </div>
-        <div className={styles.div30}>17 </div>
-        <div className={styles.div31}>18 </div>
-        <div className={styles.div32}>19 </div>
-        <div className={styles.div33}> 20</div>
-        <div className={styles.div34}> 21</div>
-        <div className={styles.div35}> 22</div>
-        <div className={styles.div36}> 23</div>
-        <div className={styles.div37}>24 </div>
-        <div className={styles.div38}>25 </div>
-        <div className={styles.div39}> 26</div>
-        <div className={styles.div40}> 27</div>
-        <div className={styles.div41}> 28</div>
-        <div className={styles.div42}>29 </div>
-        <div className={styles.div43}> 30</div>
-        <div className={styles.div44}> 31</div>
-        <div className={styles.div45}> 32</div>
-        <div className={styles.div46}> 33</div>
-        <div className={styles.div47}>34 </div>
-        <div className={styles.div48}>35 </div>
-        <div className={styles.div49}>36 </div>
-        <div className={styles.div50}> 37</div>
-        <div className={styles.div51}> 38</div>
-        <div className={styles.div52}> 39</div>
-        <div className={styles.div53}> 40</div>
-        <div className={styles.div54}>41 </div>
-        <div className={styles.div55}> 42</div>
-        <div className={styles.div56}> 43</div>
-        <div className={styles.div57}> 44</div>
-        <div className={styles.div58}> 45</div>
-        <div className={styles.div59}> 46</div>
-        <div className={styles.div60}> 47</div>
-        <div className={styles.div61}> 48</div>
-        <div className={styles.div62}> 49</div>
-        <div className={styles.div63}>50 </div>
-        <div className={styles.div64}> 51</div>
-        <div className={styles.div65}> 52</div>
-        <div className={styles.div66}>53 </div>
-        <div className={styles.div67}>54 </div>
-        <div className={styles.div68}> 55</div>
-        <div className={styles.div69}>56 </div>
-        <div className={styles.div70}>57 </div>
-        <div className={styles.div71}>58 </div>
-        <div className={styles.div72}> 59</div>
-        <div className={styles.div73}> 60</div>
-        <div className={styles.div74}> 61</div>
-        <div className={styles.div75}> 62</div>
-        <div className={styles.div76}> 63</div>
-        <div className={styles.div77}> 64</div>
-        <div className={styles.div78}> 65</div>
-        <div className={styles.div79}>66 </div>
-        <div className={styles.div80}> 67</div>
-        <div className={styles.div81}> 68</div>
-        <div className={styles.div82}> 69</div>
-        <div className={styles.div83}> 70</div>
-        <div className={styles.div84}> 71</div>
-        <div className={styles.div85}> 72</div>
-        <div className={styles.div86}> 73</div>
-        <div className={styles.div87}> 74</div>
-        <div className={styles.div88}>75 </div>
-        <div className={styles.div89}>76 </div>
-        <div className={styles.div90}> 77</div>
-        <div className={styles.div91}> 78</div>
-        </div>
-    </Container>
-  )
+        {seeder(13).map((item, index) => {
+          return (
+            <div key="index" className={styles.box1}>
+              <h2>{++item}</h2>
+            </div>
+          );
+        })}
+
+        {
+          seeder(78).map((item,index)=>{
+            return (
+              <div key="index" className={styles.box}>
+              <h2>{++item}</h2>
+              <div className={styles.circle}>
+                {/* circle inscribed is conditionally rendered for diffrent inputs */}
+                <div className={styles.circleInscribed}></div>
+              </div>
+            </div>
+            )
+          })
+        }
+      </div>
+    </Container>  
+  );
 }
-export default LeftDashboard
+export default LeftDashboard;
