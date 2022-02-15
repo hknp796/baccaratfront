@@ -9,7 +9,7 @@ let P,B
       <Container className={styles.buttonsContainer}>
         <div className={styles.rightButton}>
           <div>
-            <button style={{ backgroundColor: "#277ECA" }} onClick={()=>props.buttonClick(1)}>P</button>
+            <button style={{ backgroundColor: "#277ECA" }} onClick={()=>props.buttonClick(1,"#277ECA")}>P</button>
           </div>
           <div>
             <button style={{ backgroundColor: "#ED4967" }} onClick={()=>props.buttonClick(2)}>B</button>{" "}

@@ -4,69 +4,64 @@
   grid-template-rows: repeat(7, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+
   position: absolute;
   top: 8rem;
   left: 13px;
-  }
+}
 
-  .parent > div {
-    width: 42px;
-    height: 44px;
-    border: 1px solid #eaebf1;
-    color: #cdcfde;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-  }
+.parent > div {
+  width: 42px;
+  height: 44px;
+  border: 1px solid #eaebf1;
+  color: #cdcfde;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .box{
-    position: relative;
-  }
+.box {
+  position: relative;
+  display: flex;
+  width: 20%;
+  height: 20%;
+}
 
-  .box1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.box1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .box1 > h2{
-    font-size:20px;
-    margin:0px;
-  }
+.box1 > h2 {
+  font-size: 20px;
+  margin: 0px;
+}
 
+.box > h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 12px;
+}
 
-  .box > h2{
-    position: absolute;
-    top:0;
-    left:0;
-    font-size:12px;
-  }
+.circle {
+ 
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 8px;
+  right: 5px;
+}
 
-  .circle{
-    background-color: aqua;
-    width:20px;
-    height:20px;
-    border-radius: 100%;
-    position: absolute;
-    bottom: 8px;
-    right: 5px;
-  }
-
-  .circleInscribed{
-    background-color: cadetblue;
-    width:10px;
-    height:10px;
-    border: 2px solid white;
-    border-radius: 100%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-  }
-
-  
-
-
-
-
-  
+.circleInscribed {
+  background-color: cadetblue;
+  width: 10px;
+  height: 10px;
+  border: 2px solid white;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

@@ -19,7 +19,8 @@ function Dashboard() {
   const [letter, setLetter] = useState([]);
   const[counter,setCounter] = useState(count)
 
-  const buttonClick = (id) => {
+  const buttonClick = (id,color) => {
+    setStyle([...style,color])
     setCounter({ ...counter, [id]: counter[id] + 1 })
   };
   
