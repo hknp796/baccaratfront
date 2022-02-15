@@ -56,7 +56,7 @@ function Dashboard() {
                 
                   className={styles.select}
                 >
-                  <option>Select Platform</option>
+                  <option>Select Casino</option>
                   <option value="Stardust">Stardust</option>
                   <option value="Draftking">Draftking</option>
                   <option value="Bitstars">Bitstars</option>
@@ -70,24 +70,22 @@ function Dashboard() {
                   className={styles.select}
                 >
                   <option>Select Platform</option>
-                  <option value="Stardust">Stardust</option>
-                  <option value="Draftking">Draftking</option>
-                  <option value="Bitstars">Bitstars</option>
+                  <option value="Ezugi">Ezugi</option>
+                  <option value="Evolution">Evolution</option>
+                 
                 </Form.Select>
               </Col>
               <Col>
-                <Form.Select
+                <input type="text"
                   aria-label="Default select example"
-                  className={styles.select}
+                  className={styles.textBox}
+                  placeholder="Selelct Game"
                 >
                   {/* iterative rendering here  */}
-                  <option>Select Game</option>
-                  <option value="Stardust">Stardust</option>
-                  <option value="Draftking">Draftking</option>
-                  <option value="Bitstars">Bitstars</option>
+              
                   {/*  */}
 
-                </Form.Select>
+                </input>
               </Col>
 
               <Col className={styles.colright}>

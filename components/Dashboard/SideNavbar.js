@@ -8,18 +8,19 @@ function SideNavbar() {
         <Nav.Link className={styles.logo}>
           <img src="/logo.png" className={styles.logo} />
         </Nav.Link>
-        <Link href="/">
+      
 
         <div className={styles.links}>
           {" "}
           <img src="/dashboard.png" className={styles.img} />
           Dashboard
         </div>
-        </Link>
-        <Nav.Link className={styles.links}>
+        <Link href="/">
+        <div className={styles.links}>
           <img src="/loggerDash.png" className={styles.logdash} />
           Logger Dashboard
-        </Nav.Link>
+        </div>
+        </Link>
         <Nav.Link className={styles.links}>
           {" "}
           <img src="/logs.png" className={styles.img} />

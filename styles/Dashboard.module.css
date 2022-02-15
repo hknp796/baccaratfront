@@ -33,6 +33,14 @@
   border-style: none;
   
 }
+.textBox{
+  width: 150px;
+  margin-top: 53px;
+  margin-right: 90px;
+  border-radius: 14px;
+  border-style: none;
+  padding: 6px 0 6px 2px;
+}
 .colleft {
   margin-right: -100px;
  
