@@ -7,21 +7,24 @@ const style = {
   display: "flex",
   float: "left",
   width: "100%",
+  color: "white" 
 };
 
 function pattern(data) {
   const [list, setList] = useState([]);
-  const saveSearch = (data) => {
-    setList(data);
+  const saveSearch = (data,index) => {
+    console.log("index",index);
+    setList([data]);
   };
-  console.log("list123", list[0]);
+  console.log("list123", list);
 
   return (
    <div>
+     
      <Search saveSearch={saveSearch} />
       {list[0] ? (
         <Container>
-          <h3 style={{ color: "white" }}>Search Results</h3>
+          <h3 style={style}>Search Results</h3>
           <SearchList list={list} />
         </Container>
       ) : null}

@@ -19,45 +19,34 @@ const initialValues = {
 };
 const Search = (props) => {
   const [formData, setFormData] = useState([initialValues]);
-  // const [data, setData] = useState({});
-
-  // axios
-  //   .get("http://127.0.0.1:8000/api/logs/get-games-log", {
-  //     headers: {
-  //       Authorization: `Bearer ${"TfbeAyyCqTLX3ZMts6odYGY2vefEd4rBzjuGsYQq"}`,
-  //     },
-  //   })
-  //   .then((res) => {
-  //     console.log("logs", res.data.data[0].result);
-  //   });
-
 
   // Form Submitt
-  const handleSubmit = (e) => {
+  const handleSubmit = (e,index) => {
     e.preventDefault();
-    props.saveSearch(formData);
-    console.log("formDAta", formData);
+    
+    props.saveSearch(formData[index],index);
+    console.log("formDataI",formData[index]);
   };
 //Handle Change
-  const handleChangeInput = (e, i) => {
+  const handleChangeInput = (e, index) => {
     const { value, name } = e.target;
 
     const newState = [...formData];
-    newState[i] = {
-      ...newState[i],
+    newState[index] = {
+      ...newState[index],
       [name]: value,
     };
+  
     setFormData(newState);
   };
-  const handleAddFields = () => {
+  const handleAddFields = (e) => {
+    e.preventDefault()
     setFormData([...formData, initialValues]);
   };
   return (
     <Container fluid className={styles.container}>
-
-    
     <div >
-      <Form onSubmit={handleSubmit}>
+      <Form>
         {formData.map((data, index) => {
           return (
             <div key={index}>
@@ -142,6 +131,7 @@ const Search = (props) => {
                         variant="success"
                         type="submit"
                         className="mt-4 w-100 mb-4"
+                        onClick={(e)=>handleSubmit(e,index)}
                       >
                         <Icon.Search className="" />
                         Search
