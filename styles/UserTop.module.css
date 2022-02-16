@@ -1,0 +1,46 @@
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 29vw;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+}
+
+.avatarImage {
+  height: 31px;
+  width: 31px;
+  border-radius: 50%;
+  margin-right: 2px;
+}
+
+.profileSelect {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  max-width: 20vw;
+}
+
+.select {
+  border-radius: 14px;
+  width: 179px;
+  margin-right: 10px;
+}
+
+.inputField {
+  border-radius: 14px;
+  width: 179px;
+  margin-right: 10px;
+  padding: 6px;
+}
+
+/* @media (max-width: 900px) {
+  .profile {
+    max-width: 60vw;
+  }
+} */
