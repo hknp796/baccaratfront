@@ -1,3 +1,8 @@
+.dashConatiner {
+  padding: 20px;
+  margin-top: 40px;
+}
+
 .upload {
   border-radius: 25px;
 }
@@ -7,23 +12,18 @@
 .dashboard {
   background-color: #0b3e98;
 }
-.header{
+.header {
   background-color: #083686;
   color: white;
   height: 110px;
 }
 .card {
- width: 1502px;
-  border: none !important;
+  min-width: 79vw;
+  border: none;
   margin-top: -10px;
-  
 }
-.dashConatiner{
-  padding: 20px;
-  margin-top: 40px;
- 
-}
-.middle{
+
+.middle {
   height: 332px;
 }
 .select {
@@ -31,9 +31,8 @@
   width: 179px;
   border-radius: 14px;
   border-style: none;
-  
 }
-.textBox{
+.textBox {
   width: 150px;
   margin-top: 53px;
   margin-right: 90px;
@@ -43,7 +42,6 @@
 }
 .colleft {
   margin-right: -100px;
- 
 }
 .colright {
   margin-top: 35px;
@@ -51,8 +49,8 @@
   right: -13.4rem;
   font-size: 10px;
 }
-.colright  h4{
-font-weight: 600;
+.colright h4 {
+  font-weight: 600;
 }
 
 .rightbuttonupload {
@@ -61,11 +59,10 @@ font-weight: 600;
   height: 41px;
   right: 151px;
   margin-top: 28px;
-  
+
   border-radius: 15px;
   line-height: 15px;
   font-weight: 400;
-  
 }
 .rightbuttonSave {
   width: 119px;
@@ -76,56 +73,3 @@ font-weight: 600;
   border-radius: 15px;
   font-weight: 500;
 }
-.avatar {
-  /* Rounded border */
-  border-radius: 50%;
- 
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.avatarImage {
-  height: 31px;
-  width: 31px;
-  border-radius: 50%;
-  top: 0;
-  left: 0;
-  position: absolute;
-}
-
-.profile {
-  display: flex;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  position: absolute;
-  width: 563px;
-  top: 15px;
-  }
-  
-  .div1 { grid-area: 1 / 1 / 2 / 2; }
-  .div2 { grid-area: 1 / 2 / 2 / 3; }
-  .div3 { grid-area: 1 / 3 / 2 / 4; }
-  .div4 { grid-area: 1 / 4 / 2 / 5; }
-
-  .profile > div:nth-child(1){
-    left: 10px;
-  }
-  .profile > div:nth-child(2){
-    left: 35px;
-    position: relative;
-  }
-  .profile > div:nth-child(3){
-    left: 85px;
-    position: relative;
-  } 
-  .profile > div:nth-child(4){
-    left: 190px;
-    position: relative;
-  }
-  .profile > div:nth-child(5){
-    left: 260px;
-    position: relative;
-  }
